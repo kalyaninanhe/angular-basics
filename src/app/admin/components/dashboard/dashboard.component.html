@@ -1,4 +1,8 @@
-<p>dashboard works!</p>
-<div>
+<!-- <div>
   <app-home [title]="'hi HOME'" (dataFromChild)="getDataFromChild($event)"></app-home>
+</div> -->
+<h3>Users</h3>
+<button (click)="showProduct()">Show Products</button>
+<div *ngFor="let user of users">
+  {{user.id}} - {{user?.name?.firstname}}
 </div>
